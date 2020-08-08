@@ -65,6 +65,11 @@
   text-transform: uppercase;
   line-height: 1;
 }
+@media (max-width: 800px) {
+  .main-nav {
+    display: none;
+  }
+}
 
 /* =================================
       All about mobile navigations
@@ -104,10 +109,14 @@ nav ul li a:hover {
 }
 
 .button {
-  right: 50px;
-  top: 6px;
   z-index: 99999;
   font-size: 30px;
+  display: none;
+}
+@media (max-width: 800px) {
+  .button {
+    display: block;
+  }
 }
 
 .button a {
