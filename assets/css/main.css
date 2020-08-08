@@ -1,0 +1,367 @@
+/* ===================
+       Topbar
+   =================== */
+.umo-topbar-area {
+  background: #f9c14a;
+}
+
+.umo-topbar {
+  background: #f9c14a;
+  min-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.umo-offer a {
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  text-decoration: none;
+}
+
+.umo-login a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+/* ========================
+      Navigation and Logo
+   ======================== */
+.umo-navbar-area {
+  background: #000000;
+  min-height: 60px;
+  overflow: hidden;
+}
+
+.umo-logo a {
+  cursor: pointer;
+}
+
+.umo-main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav nav ul {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.main-nav nav ul li {
+  list-style: none;
+  float: left;
+}
+.main-nav nav ul li a {
+  text-decoration: none;
+  padding: 1rem 1.6rem;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+/* ===================
+       Top Slider
+   =================== */
+.umo-top-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-parallax {
+  width: 100%;
+  height: 100%;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide .subtitle {
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  max-width: 550px;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 100px;
+}
+.swiper-slide .subtitle span {
+  color: #f9c14a;
+}
+
+.swiper-slide .text {
+  font-size: 14px;
+  max-width: 400px;
+  line-height: 1.3;
+}
+
+/* ========================
+     Top Carousal Slider
+   ======================== */
+.umo-carousal-slider {
+  overflow: hidden;
+  padding: 3rem 0;
+  background: #f4f4f4;
+}
+
+.umo-browseby-cuisine-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.umo-browseby-cuisine-header h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+.umo-browseby-cuisine-header a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+}
+
+/* ================================
+       Feature Restaurants Slider
+   ================================ */
+.umo-feature-restaurants {
+  padding: 3rem 0;
+}
+
+.umo-features-headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.umo-features-headers h3 {
+  font-family: "Raleway", sans-serif;
+}
+.umo-features-headers a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+}
+
+/* ===================
+       Swiper Slide
+   =================== */
+.swiper-container, .swiper-carousal {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  height: calc((100% - 30px) / 2);
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* ===========================
+       Near by Restaurants
+   =========================== */
+.umo-nearby-restaurants {
+  background: #f4f4f4;
+  padding: 3rem 0;
+}
+
+.umo-nearby-headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.umo-nearby-headers h3 {
+  font-family: "Raleway", sans-serif;
+}
+.umo-nearby-headers a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+}
+
+.nby-restaurants img {
+  border-radius: 10px;
+}
+
+.res-name {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  right: 15px;
+  background: #f9c14a;
+  color: #000000;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-weight: 500;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.more-details {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+.more-details a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.stars {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+/* ========================
+       Apps Store CTA
+   ======================== */
+.umo-apps-store-area {
+  min-height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.umo-apps-store-area h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.umo-apps-store-area p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+/* ========================
+       Main Footer Area
+   ======================== */
+.main-footer-area {
+  background: #000000;
+  border-top: 10px solid #f9c14a;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3rem 0;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+}
+@media (min-width: 601px) {
+  .main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.umo-address p {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+}
+.umo-address a {
+  margin-top: 1.2rem;
+  display: inline-block;
+  background: #f9c14a;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #000000;
+  font-size: 0.8rem;
+}
+
+.umo-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+}
+.umo-contact .umo-mail, .umo-contact .umo-call, .umo-contact .umo-email {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.umo-contact .umo-mail i, .umo-contact .umo-call i, .umo-contact .umo-email i {
+  color: #000000;
+  position: relative;
+  margin-right: 1rem;
+  background: #fff;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 8px;
+}
+.umo-contact .umo-mail a, .umo-contact .umo-call a, .umo-contact .umo-email a {
+  color: #ffffff;
+}
+
+.umo-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+}
+.umo-social a {
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.umo-social a i {
+  color: #000000;
+  position: relative;
+  margin-right: 1rem;
+  background: #fff;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 8px;
+}
+
+/*# sourceMappingURL=main.css.map */
