@@ -52,7 +52,6 @@
 
 
       <div class="main-nav">
-        <nav>
           <ul>
             <li><a href="">HOME</a></li>
             <li><a href="">BOOKING</a></li>
@@ -60,12 +59,46 @@
             <li><a href="">CLASSIFIED</a></li>
             <li><a href="">CONTACT US</a></li>
           </ul>
-        </nav>
       </div>
 
+      <div class="button">
+        <a class="btn-open" href="#"></a>
+      </div>
 
     </div>
   </div>
+
+  <div class="overlay">
+    <div class="wrap">
+      <ul class="wrap-nav">
+        <li><a href="#">Home</a>
+          <ul>
+            <li><a href="#">About Company</a></li>
+            <li><a href="#">Designers</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Pets</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Booking</a>
+          <ul>
+            <li><a href="https://www.google.hr/">Web Design</a></li>
+            <li><a href="#">Development</a></li>
+            <li><a href="#">Apps</a></li>
+            <li><a href="#">Graphic design</a></li>
+            <li><a href="#">Branding</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Delivery</a>
+          <ul>
+            <li><a href="#">Classified</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
 </div>
 
 
@@ -507,6 +540,20 @@ src = "assets/js/jquery.cslider.js" ></script>
             bgincrement: 450
         });
 
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+        $(".button a").click(function(){
+            $(".overlay").fadeToggle(200);
+            $(this).toggleClass('btn-open').toggleClass('btn-close');
+        });
+    });
+    $('.overlay').on('click', function(){
+        $(".overlay").fadeToggle(200);
+        $(".button a").toggleClass('btn-open').toggleClass('btn-close');
+        open = false;
     });
 </script>
 <script src="assets/js/swiper.js"></script>
